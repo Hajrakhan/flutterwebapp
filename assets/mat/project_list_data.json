@@ -1,0 +1,521 @@
+{
+  "formName": "Projects List",
+  "baseUrl": "https://devbe.hive-worx.com:8443",
+  "authorization": {
+    "functionality": [
+      {
+        "functionalityName": "form",
+        "roleName": "BirthAndDelivery",
+        "permission": true
+      },
+      {
+        "functionalityName": "add",
+        "roleName": "BirthAndDelivery",
+        "permission": true
+      },
+      {
+        "functionalityName": "delete",
+        "roleName": "BirthAndDelivery",
+        "permission": true
+      },
+      {
+        "functionalityName": "update",
+        "roleName": "BirthAndDelivery",
+        "permission": true
+      }
+    ]
+  },
+  "commonHeader": {
+    "browser": "chrome",
+    "os_version": "windows-10",
+    "authorization": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmR1bC5yZWhtYW4xIiwiZXhwIjoxNjM3ODI3MjU3LCJ1c2VySWQiOjYwMywidXNlckxvZ0lkIjo5OTMwOSwiYXBwcm9sZXMiOiJbMTI4LDQsNDUsMTk0LDEwNywyODUsMjc4LDgyMiwxMiw2LDgwLDQyLDksMjkyLDIwLDI3OSwxNSwxOCw1MiwyODMsMSw2NywxMzEsMTksMTI3LDkyLDI4NCwyOTQsMjg5LDc1LDUxLDE0LDc4LDExLDUwLDU1LDUzLDUsMTA4LDQ0LDMxMiw3OSwzMjMsOCwyNzcsMTYsMTMwLDEyOSwyODEsMjczLDEyMSwzNDksMjgyLDI5MCwyOTYsMTcwLDQ5LDI5MSwxNyw5Myw5NCw2Niw1NCwyOTUsMTM0LDExMCwyOTMsMyw0OCwyNzYsNywyLDI4OCwyODAsNDcsNDYsMTAsMTI2LDI5N10iLCJFeHBpcmF0aW9uX0RhdGUiOjE2Mzc4MjcyNTczOTB9.uec2JfrNMfsR9L49R6PSrucYdevpAubilBKFvrRyZO77wsp_ytkNYsduol3UZIzlPahicR9GOU7_3kg_gqSDz0g",
+    "device": "laptop",
+    "browser_version": "88.0.4324.146",
+    "os": "Windows",
+    "content-type": "application/json",
+    "origin": "https://dev.hive-worx.com",
+    "referer": "https://dev.hive-worx.com/"
+  },
+  "commonBody": {
+    "templateDropdown": {
+      "subProjectId": 0,
+      "currentProjectId": 882,
+      "currentUserId": 623,
+      "activatedRoleId": 1,
+      "activatedRoleTitle": "Admin",
+      "applicationId": 1,
+      "versionId": 0,
+      "projectTitle": "Exchange",
+      "username": "abdul.rehman1",
+      "projecttype": "Project",
+      "clientId": -1,
+      "data": {}
+    }
+  },
+  "RetrieveForm": {
+    "getList": {
+      "url": "/UMS/rest/ums/getProjects",
+      "requestBody": "startMap,mapKey,project,startMap,key,title,source,field,valueKey,title,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,endMap,comma,key,clientId,source,session,valueKey,clientId,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,0,type,integer,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,dataType,string,default,Admin,,type,String,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,endMap",
+      "indexes": {
+        "Logo": [
+          "data",
+          "[]",
+          "-1",
+          "image"
+        ],
+        "Title": [
+          "data",
+          "[]",
+          "-1",
+          "title"
+        ],
+        "Short Title": [
+          "data",
+          "[]",
+          "-1",
+          "shortTitle"
+        ],
+        "Status": [
+          "data",
+          "[]",
+          "-1",
+          "status"
+        ],
+        "Code": [
+          "data",
+          "[]",
+          "-1",
+          "code"
+        ],
+        "Owner": [
+          "data",
+          "[]",
+          "-1",
+          "owner"
+        ],
+        "Start Date": [
+          "data",
+          "[]",
+          "-1",
+          "startDate"
+        ],
+        "End Date": [
+          "data",
+          "[]",
+          "-1",
+          "endDate"
+        ]
+      },
+      "dataIndexes": [
+        "data"
+      ]
+    },
+    "pagination": {
+      "getCount": {
+        "url": "/UMS/rest/ums/getProjects",
+        "requestBody": "startMap,mapKey,project,startMap,key,title,source,field,valueKey,title,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,endMap,comma,key,clientId,source,session,valueKey,clientId,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,-1,type,integer,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,endMap",
+        "indexes": {
+          "count": [
+            "data",
+            "[]",
+            "1"
+          ]
+        }
+      },
+      "pageNo": "page",
+      "pageSize": "itemsPerPage"
+    }
+  },
+  "SearchForm": {
+            "requestBody": "startMap,mapKey,project,startMap,key,title,source,field,valueKey,title,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,endMap,comma,key,clientId,source,session,valueKey,clientId,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,0,type,integer,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,endMap",
+    "fields":   [
+      {
+        "key": "title",
+        "type": "TextFieldWidget",
+        "label": "Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "shortTitle",
+        "type": "TextFieldWidget",
+        "label": "Short Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "code",
+        "type": "TextFieldWidget",
+        "label": "Code",
+        "hint": "Enter Code"
+      },
+      {
+        "key": "owner",
+        "type": "TextFieldWidget",
+        "label": "Owner",
+        "hint": "Enter Owner"
+      },
+      {
+        "key": "status",
+        "type": "DropdownWidget",
+        "label": "Select Status",
+        "service": null,
+        "list": [
+          {
+            "id": "Draft",
+            "title": "Draft"
+          },
+          {
+            "id": "Review",
+            "title": "Review"
+          },
+          {
+            "id": "Approved",
+            "title": "Approved"
+          },
+          {
+            "id": "Published",
+            "title": "Published"
+          }
+        ]
+      },
+      {
+        "key": "startDate",
+        "type": "DatePickerWidget",
+        "label": "Start Date",
+        "hint": "Choose Date",
+        "required": true
+      },
+      {
+        "key": "endDate",
+        "type": "DatePickerWidget",
+        "label": "End Date",
+        "hint": "Choose Date",
+        "required": true
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Search"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ]
+  },
+  "AddForm": {
+    "url": "/UMS/rest/ums/addUpdateProject",
+    "key": "medicationForm",
+    "requestBody": "startMap,key,client,source,session,valueKey,client,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,username,source,session,valueKey,username,comma,key,projectTitle,source,field,valueKey,projectTitle,datatype,string,comma,key,projecttype,source,session,valueKey,projecttype,comma,key,clientId,source,session,valueKey,clientId,comma,mapKey,project,startMap,key,projectTitle,source,field,valueKey,projectTitle,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,comma,key,database,source,field,valueKey,database,dataType,string,comma,key,projectImg,source,field,valueKey,projectImg,dataType,string,default,,type,string,comma,key,template,source,field,valueKey,template,dataType,string,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,myImg,source,field,valueKey,myImg,dataType,string,default,,type,string,comma,key,projectId,source,field,valueKey,projectId,datatype,integer,default,0,type,integer,comma,mapKey,user,startMap,key,userId,source,session,keyValue,userId,endMap,endMap,comma,mapKey,data,startMap,mapKey,project,startMap,key,projectTitle,source,field,valueKey,projectTitle,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,comma,key,database,source,field,valueKey,database,dataType,string,comma,key,projectImg,source,field,valueKey,projectImg,dataType,string,default,,type,string,comma,key,template,source,field,valueKey,template,dataType,string,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,myImg,source,field,valueKey,myImg,dataType,string,comma,key,projectId,source,field,valueKey,projectId,datatype,integer,default,0,type,integer,comma,mapKey,user,startMap,key,userId,source,session,keyValue,userId,endMap,endMap,comma,key,client,source,session,valueKey,client,endMap,endMap",
+    "dependentRequests": [
+      {
+        "url": "/mat3.0/rest/ProjectTemplateService/addProjectTemplate",
+        "requestBody": "startMap,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,username,source,session,valueKey,username,comma,key,projectTitle,source,field,valueKey,projectTitle,datatype,string,comma,key,projecttype,source,session,valueKey,projecttype,comma,key,clientId,source,session,valueKey,clientId,comma,key,templateId,source,field,valueKey,template,dataType,integer,comma,key,projectId,source,api,valueKey,projectId,comma,key,databaseId,source,field,valueKey,database,dataType,integer,endMap"
+      }
+    ],
+    "formValidationService": {
+      "type": "uniqueCheckForm",
+      "url": "/UMS/rest/ums/getProjects",
+      "requestBody": "startMap,mapKey,project,startMap,key,title,source,field,valueKey,projectTitle,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,endMap,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,userId,source,session,valueKey,userId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,comma,key,clientId,source,session,valueKey,clientId,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,-2,type,integer,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projectId,source,session,valueKey,projectId,comma,mapKey,data,startMap,mapKey,project,startMap,key,title,source,field,valueKey,projectTitle,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,endMap,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,-2,type,integer,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,clientId,source,session,valueKey,clientId,endMap,endMap",
+      "toCheck": {
+        "key": "statusCode",
+        "unique": "204",
+        "duplicate": "200"
+      }
+    },
+    "fields": [
+      {
+        "key": "projectTitle",
+        "type": "TextFieldWidget",
+        "index": [
+          "title"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "shortTitle",
+        "type": "TextFieldWidget",
+        "index": [
+          "shortTitle"
+        ],
+        "label": "Short Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "code",
+        "type": "TextFieldWidget",
+        "index": [
+          "code"
+        ],
+        "label": "Code",
+        "hint": "Enter Code",
+        "keyboardType": "Number"
+      },
+      {
+        "key": "owner",
+        "type": "TextFieldWidget",
+        "index": [
+          "owner"
+        ],
+        "label": "Owner",
+        "hint": "Enter Owner"
+      },
+      {
+        "key": "template",
+        "type": "DropdownWidget",
+        "label": "Select Template",
+        "service": {
+          "url": "t/XIGT3.0/rest/ProjectTemplateService/getProjectTemplaes",
+          "commonBody": "templateDropdown",
+          "indexes": {
+            "id": [
+              "data",
+              "[]",
+              "1",
+              "paginatedResult",
+              "[]",
+              "-1",
+              "_id"
+            ],
+            "title": [
+              "data",
+              "[]",
+              "1",
+              "paginatedResult",
+              "[]",
+              "-1",
+              "title"
+            ]
+          }
+        }
+      },
+      {
+        "key": "status",
+        "type": "DropdownWidget",
+        "index": [
+          "status"
+        ],
+        "label": "Select Status",
+        "service": null,
+        "list": [
+          {
+            "id": "Draft",
+            "title": "Draft"
+          },
+          {
+            "id": "Review",
+            "title": "Review"
+          },
+          {
+            "id": "Approved",
+            "title": "Approved"
+          },
+          {
+            "id": "Published",
+            "title": "Published"
+          }
+        ]
+      },
+      {
+        "key": "database",
+        "type": "DropdownWidget",
+        "index": [
+          "database"
+        ],
+        "label": "Select Database",
+        "service": null,
+        "list": [
+          {
+            "id": "1",
+            "title": "Postgres"
+          }
+        ]
+      },
+      {
+        "key": "startDate",
+        "type": "DatePickerWidget",
+        "label": "Start Date",
+        "hint": "Choose Date",
+        "index": [
+          "startDate"
+        ],
+        "required": true
+      },
+      {
+        "key": "endDate",
+        "type": "DatePickerWidget",
+        "label": "End Date",
+        "hint": "Choose Date",
+        "index": [
+          "endDate"
+        ],
+        "required": true
+      },
+      {
+        "key": "projectImg",
+        "type": "FilePickerWidget",
+        "label": "Project Image",
+        "multiple": false,
+        "required": true,
+        "index": [
+          "projectImg"
+        ],
+        "url": "/HWAssets/rest/Assets/upload/ReportRenderingEngine/Image/png"
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Save"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ]
+  },
+  "DeleteForm": {
+    "url": "/UMS/rest/ums/deleteProject",
+    "key": "projectId",
+    "requestBody": "startMap,key,cprojectId,source,api,valueKey,projectId,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,clientId,source,session,valueKey,clientId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,default,1,type,integer,comma,key,versionId,source,session,valueKey,versionId,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,comma,mapKey,data,startMap,key,cprojectId,source,api,valueKey,projectId,endMap,endMap"
+  },
+  "editForm": {
+      "requestBody": "startMap,mapKey,project,startMap,key,projectTitle,source,field,valueKey,projectTitle,dataType,string,comma,key,shortTitle,source,field,valueKey,shortTitle,dataType,string,comma,key,code,source,field,valueKey,code,dataType,string,comma,key,startDate,source,field,valueKey,startDate,dataType,string,comma,key,endDate,source,field,valueKey,endDate,dataType,string,comma,key,owner,source,field,valueKey,owner,dataType,string,comma,key,status,source,field,valueKey,status,dataType,string,comma,key,projectImg,source,field,valueKey,projectImg,dataType,string,comma,key,type,source,session,valueKey,type,default,1,type,integer,comma,key,myImg,source,session,valueKey,myImg,default,,type,string,comma,key,projectId,source,api,valueKey,projectId,comma,mapKey,user,startMap,key,userId,source,session,valueKey,userId,endMap,endMap,comma,key,clientId,source,session,valueKey,clientId,comma,key,client,source,session,valueKey,client,comma,key,itemsPerPage,source,session,valueKey,itemsPerPage,comma,key,page,source,session,valueKey,page,default,0,type,integer,comma,key,subProjectId,source,session,valueKey,subProjectId,comma,key,currentProjectId,source,session,valueKey,currentProjectId,comma,key,currentUserId,source,session,valueKey,currentUserId,comma,key,activatedRoleId,source,session,valueKey,activatedRoleId,comma,key,activatedRoleTitle,source,session,valueKey,activatedRoleTitle,comma,key,applicationId,source,session,valueKey,applicationId,comma,key,versionId,source,session,valueKey,versionId,comma,key,projectTitle,source,session,valueKey,projectTitle,comma,key,username,source,session,valueKey,username,comma,key,projecttype,source,session,valueKey,projecttype,endMap",
+    "mapIndexes": [
+      {
+        "key": "projectId",
+        "indexes": [
+          "project"
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "key": "projectTitle",
+        "type": "TextFieldWidget",
+        "index": [
+          "title"
+        ],
+        "label": "Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "shortTitle",
+        "type": "TextFieldWidget",
+        "index": [
+          "shortTitle"
+        ],
+        "label": "Short Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "code",
+        "type": "TextFieldWidget",
+        "index": [
+          "code"
+        ],
+        "label": "Code",
+        "hint": "Enter Code"
+      },
+      {
+        "key": "owner",
+        "type": "TextFieldWidget",
+        "index": [
+          "owner"
+        ],
+        "label": "Owner",
+        "hint": "Enter Owner"
+      },
+      {
+        "key": "status",
+        "type": "DropdownWidget",
+        "index": [
+          "status"
+        ],
+        "label": "Select Status",
+        "service": null,
+        "list": [
+          {
+            "id": "Draft",
+            "title": "Draft"
+          },
+          {
+            "id": "Review",
+            "title": "Review"
+          },
+          {
+            "id": "Approved",
+            "title": "Approved"
+          },
+          {
+            "id": "Published",
+            "title": "Published"
+          }
+        ]
+      },
+      {
+        "key": "startDate",
+        "type": "DatePickerWidget",
+        "label": "Start Date",
+        "hint": "Choose Date",
+        "index": [
+          "startDate"
+        ],
+        "required": true
+      },
+      {
+        "key": "endDate",
+        "type": "DatePickerWidget",
+        "label": "End Date",
+        "hint": "Choose Date",
+        "index": [
+          "endDate"
+        ],
+        "required": true
+      },
+      {
+        "key": "projectImg",
+        "type": "FilePickerWidget",
+        "label": "Project Image",
+        "multiple": false,
+        "required": true,
+        "index": [
+          "projectImg"
+        ],
+        "url": "/HWAssets/rest/Assets/upload/ReportRenderingEngine/Image/png"
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Update"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "formName": "Maturity Assessment Tool",
+  "baseUrl": "https://devbe.hive-worx.com:8461",
+  "commonHeader": {
+    "authority": "devbe.hive-worx.com:8461",
+    "sec-ch-ua": "Google Chrome;v='95', ",
+    "Chromium": "v=95",
+    "browser": "chrome",
+    "os_version": "windows-10",
+    "sec-ch-ua-mobile": "?0",
+    "authorization": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmR1bC5yZWhtYW4xIiwiZXhwIjoxNjM4MjU0MzcwLCJ1c2VySWQiOjYwMywidXNlckxvZ0lkIjo5OTY3NywiYXBwcm9sZXMiOiJbODY2LDQsNDUsODQ0LDE5NCwyODUsMjc4LDg1Myw4MzUsODU0LDg3Miw4NDcsODIyLDEyLDYsOSwyOTIsMjAsODcwLDgzNyw4NjEsMjc5LDE1LDE4LDUyLDI4Myw4NTEsODU4LDgzOCw2Nyw4NDksMTksODY3LDg2Myw5MiwyODQsODUwLDI5NCw4NjIsODQxLDg0OCw4NTIsMjg5LDc1LDUxLDE0LDc4LDExLDUwLDg0NSw1NSw1Myw1LDQ0LDMxMiw3OSwzMjMsOCwyNzcsMTYsMjgxLDI3Myw4NDIsMzQ5LDg2OCw4NTUsODQ2LDI4MiwyOTAsMjk2LDE3MCw4NjAsNDksMjkxLDE3LDg2OSw4NTcsOTQsNTQsODY0LDI5NSwxMzQsODQzLDI5Myw4NzEsNDgsMjc2LDcsODQwLDgzOSwyODgsMjgwLDg1OSw0Nyw0NiwxMCw4MzYsODY1LDg1NiwyOTddIiwiRXhwaXJhdGlvbl9EYXRlIjoxNjM4MjU0MzcwMDA1fQ.zjnpgl5v2G5i6Uce3tw0meg0-ngnQc2ZWodzw9_P6tbK9tyaf99d2aDeaT48DsRp7HxAYpLLIkCvm8Jq35wHMg",
+    "content-type": "text/plain; charset=utf-8",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36",
+    "device": "laptop",
+    "browser_version": "88.0.4324.146",
+    "os": "Windows",
+    "sec-ch-ua-platform": "Windows",
+    "accept": "*/*",
+    "origin": "http://localhost:51317",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "",
+    "referer": "http://localhost:51317/",
+    "accept-language": "en-US,en;q=0.9"
+  },
+  "commonBody": {
+  },
+  "authorization": {
+    "functionality": [
+      {
+        "functionalityName": "form",
+        "roleName": "maturityAssessmentTool",
+        "permission": true
+      },
+      {
+        "functionalityName": "add",
+        "roleName": "addMaturityAssessmentTool",
+        "permission": true
+      },
+      {
+        "functionalityName": "delete",
+        "roleName": "deleteMaturityAssessmentTool",
+        "permission": true
+      },
+      {
+        "functionalityName": "update",
+        "roleName": "updateMaturityAssessmentTool",
+        "permission": true
+      }
+    ]
+  },
+  "editForm": {
+    "url": "/XIGT3.0/rest/ObjectService/editObject",
+    "requestBody": "",
+    "fields": [
+      {
+        "key": "title",
+        "type": "TextFieldWidget",
+        "index": [
+          "title"
+        ],
+        "label": "Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "description",
+        "type": "MultilineTextFieldWidget",
+        "index": [
+          "description"
+        ],
+        "obscure": false,
+        "multiple": true,
+        "multiline": 4,
+        "label": "Description",
+        "hint": "Enter Description"
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Update"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ],
+    "mapIndexes": [
+      {
+        "key": "_id",
+        "index": [
+          "object_type",
+          "_id",
+          "[]",
+          "-1"
+        ],
+        "mapIndex": [
+          {
+            "map": "data"
+          },
+          {
+            "map": "object_type"
+          },
+          {
+            "key": "object_type",
+            "value": "_id"
+          }
+        ]
+      },
+      {
+        "key": "_id",
+        "index": [
+          "object_type",
+          "_id",
+          "[]",
+          "-1"
+        ],
+        "mapIndex": [
+          {
+            "map": "object_type"
+          },
+          {
+            "key": "object_type",
+            "value": "_id"
+          }
+        ]
+      }
+    ]
+  },
+  "AddForm": {
+    "url": "",
+    "key": "data",
+    "requestBody": "",
+    "formValidationService": {
+    },
+    "fields": [
+      {
+        "key": "title",
+        "type": "TextFieldWidget",
+        "index": [
+          "title"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Title",
+        "hint": "Enter Title"
+      },
+      {
+        "key": "companyName",
+        "type": "TextFieldWidget",
+        "index": [
+          "companyName"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Company Name",
+        "hint": "Company Name"
+      },
+      {
+        "key": "contactPerson",
+        "type": "TextFieldWidget",
+        "index": [
+          "contactPerson"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Contact Person",
+        "hint": "Contact Person"
+      },
+      {
+        "key": "phoneNumber",
+        "type": "TextFieldWidget",
+        "index": [
+          "phoneNumber"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Phone Number",
+        "hint": "Phone Number",
+        "keyboardType": "Number"
+      },
+      {
+        "key": "email",
+        "type": "TextFieldWidget",
+        "index": [
+          "email"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "label": "Email",
+        "hint": "Email"
+      },
+      {
+        "key": "address",
+        "type": "MultilineTextFieldWidget",
+        "index": [
+          "address"
+        ],
+        "validation": [
+          {
+            "type": "nullCheck",
+            "required": true
+          }
+        ],
+        "obscure": false,
+        "multiple": true,
+        "multiline": 4,
+        "label": "Address",
+        "hint": "Address"
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Save"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ]
+  },
+  "RetrieveForm": {
+    "getList": {
+      "url": "/MAT/Hive-Worx/Assesment/findAllAssesment",
+      "requestBody": "startMap,key,currentUserId,source,api,valueKey,currentUserId,default,540,type,integer,comma,key,activatedRoleId,source,api,valueKey,activatedRoleId,default,1,type,integer,comma,key,subProjectId,source,api,valueKey,subProjectId,default,0,type,integer,comma,key,currentProjectId,source,api,valueKey,currentProjectId,default,1153,type,integer,comma,key,activatedRoleTitle,source,field,valueKey,activatedRoleTitle,dataType,string,default,Admin,type,String,comma,key,projectTitle,source,field,valueKey,projectTitle,dataType,string,default,Test Project,type,String,comma,key,projecttype,source,field,valueKey,projecttype,dataType,string,default,Project,type,String,comma,key,applicationId,source,api,valueKey,applicationId,default,22,type,integer,comma,key,versionId,source,api,valueKey,versionId,default,0,type,integer,comma,key,username,source,field,valueKey,userName,dataType,string,default,Test.saad,type,String,comma,key,clientId,source,api,valueKey,clientId,default,-1,type,integer,comma,mapKey,data,startMap,mapKey,assesment,startMap,key,title,source,field,valueKey,title,dataType,string,default,null,type,null,comma,key,companyName,source,field,valueKey,companyName,dataType,string,default,null,type,null,comma,key,contactPerson,source,field,valueKey,contactPerson,dataType,string,default,null,type,null,comma,key,address,source,field,valueKey,address,dataType,string,default,null,type,null,comma,key,phoneNumber,source,field,valueKey,phoneNumber,dataType,string,default,null,type,null,comma,key,email,source,field,valueKey,email,dataType,string,default,null,type,null,endMap,comma,mapKey,pagination,startMap,key,pageNo,source,api,valueKey,pageNo,default,0,type,integer,comma,key,itemsPerPage,source,api,valueKey,itemsPerPage,default,10,type,integer,endMap,endMap,endMap",
+      "indexes": {
+        "Title": [
+          "data",
+          "[]",
+          "-1",
+          "title"
+        ],
+        "Company Name": [
+          "data",
+          "[]",
+          "-1",
+          "companyName"
+        ],
+        "Contact Person": [
+          "data",
+          "[]",
+          "-1",
+          "contactPerson"
+        ],
+        "Phone Number": [
+          "data",
+          "[]",
+          "-1",
+          "phoneNumber"
+        ],
+        "Assessment Status": [
+          "data",
+          "[]",
+          "-1",
+          "assessmentStatus"
+        ],
+        "Maturity Level": [
+          "data",
+          "[]",
+          "-1",
+          "achievementLevelId",
+          "title"
+        ],
+        "Score": [
+          "data",
+          "[]",
+          "-1",
+          "scoreObtained"
+        ]
+      },
+      "key": "data",
+      "dataIndexes": [
+        "data",
+        "[]",
+        "-1"
+      ]
+    },
+    "pagination": {
+      "getCount": {
+        "url": "/MAT/Hive-Worx/Assesment/count",
+        "requestBody": "startMap,key,currentUserId,source,api,valueKey,currentUserId,default,0,type,integer,comma,key,activatedRoleId,source,api,valueKey,activatedRoleId,default,1,type,integer,comma,key,activatedRoleTitle,source,field,valueKey,activatedRoleTitle,dataType,String,default,,type,String,comma,,key,applicationId,source,api,valueKey,applicationId,default,1,type,integer,comma,key,versionId,source,api,valueKey,versionId,default,0,type,integer,comma,key,username,source,api,valueKey,username,default,,type,String,comma,key,clientId,source,api,valueKey,clientId,default,-1,type,integer,comma,mapKey,data,startMap,mapKey,assesment,startMap,key,title,source,field,valueKey,title,dataType,string,default,null,type,null,comma,key,companyName,source,field,valueKey,companyName,dataType,string,default,null,type,null,comma,key,contactPerson,source,field,valueKey,contactPerson,dataType,string,default,null,type,null,comma,key,address,source,field,valueKey,address,dataType,string,default,null,type,null,comma,key,phoneNumber,source,field,valueKey,phoneNumber,dataType,string,default,null,type,null,comma,key,email,source,field,valueKey,email,dataType,string,default,null,type,null,endMap,endMap,endMap",
+        "indexes": {
+          "count": [
+            "data",
+            "[]"
+          ]
+        }
+      },
+      "pageNo": "pageNo",
+      "pageSize": "itemsPerPage"
+    }
+  },
+  "SearchForm": {
+    "fields": [
+      {
+        "key": "title",
+        "type": "TextFieldWidget",
+        "label": "Title",
+        "ignoreIfNull": true
+      },
+      {
+        "key": "companyName",
+        "type": "TextFieldWidget",
+        "label": "Company Name",
+        "ignoreIfNull": true
+      },
+      {
+        "key": "contactPerson",
+        "type": "TextFieldWidget",
+        "label": "Contact Person",
+        "ignoreIfNull": true
+      },
+      {
+        "key": "phoneNumber",
+        "type": "TextFieldWidget",
+        "label": "Phone Number",
+        "ignoreIfNull": true
+      },
+      {
+        "key": "buttonKey",
+        "type": "Button",
+        "listOfButton": [
+          {
+            "label": "Search"
+          },
+          {
+            "label": "Cancel"
+          },
+          {
+            "label": "Clear"
+          }
+        ]
+      }
+    ],
+    "requestBody": "startMap,key,currentUserId,source,api,valueKey,currentUserId,default,0,type,integer,comma,key,activatedRoleId,source,api,valueKey,activatedRoleId,default,1,type,integer,comma,key,activatedRoleTitle,source,field,valueKey,activatedRoleTitle,dataType,string,default,,type,String,comma,,key,applicationId,source,api,valueKey,applicationId,default,1,type,integer,comma,key,versionId,source,api,valueKey,versionId,default,0,type,integer,comma,key,username,source,api,valueKey,username,default,,type,String,comma,key,clientId,source,api,valueKey,clientId,default,-1,type,integer,comma,mapKey,data,startMap,mapKey,assesment,startMap,key,title,source,field,valueKey,title,dataType,string,default,null,type,null,comma,key,companyName,source,field,valueKey,companyName,dataType,string,default,null,type,null,comma,key,contactPerson,source,field,valueKey,contactPerson,dataType,string,default,null,type,null,comma,key,address,source,field,valueKey,address,dataType,string,default,null,type,null,comma,key,phoneNumber,source,field,valueKey,phoneNumber,dataType,string,default,null,type,null,comma,key,email,source,field,valueKey,email,dataType,string,default,null,type,null,endMap,comma,mapKey,pagination,startMap,key,pageNo,source,api,valueKey,pageNo,default,0,type,integer,comma,key,itemsPerPage,source,api,valueKey,itemsPerPage,default,10,type,integer,endMap,endMap,endMap"
+  },
+  "DeleteForm": {
+    "url": "/MAT/Hive-Worx/Assesment/deleteAssesment",
+    "requestBody": "startMap,key,subProjectId,source,api,valueKey,subProjectId,default,0,type,integer,comma,key,currentProjectId,source,api,valueKey,currentProjectId,default,1153,type,integer,comma,key,currentUserId,source,api,valueKey,currentUserId,default,540,type,integer,comma,key,activatedRoleId,source,api,valueKey,activatedRoleId,default,1,type,integer,comma,key,activatedRoleTitle,source,field,valueKey,activatedRoleTitle,default,Admin,type,String,comma,key,applicationId,source,api,valueKey,applicationId,default,22,type,integer,comma,key,versionId,source,api,valueKey,versionId,default,0,type,integer,comma,key,projectTitle,source,field,valueKey,projectTitle,dataType,String,default,Test Project,type,String,comma,key,userName,source,session,valueKey,username,dataType,String,comma,mapKey,data,startMap,key,assesmentId,source,api,valueKey,assesmentId,endMap,endMap",
+    "key": "assesmentId",
+    "indexes": [
+      "data",
+      "[]",
+      "-1",
+      "assesmentId"
+    ]
+  }
+}
